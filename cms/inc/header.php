@@ -1,3 +1,6 @@
+<?php 
+    include $_SERVER['DOCUMENT_ROOT'].'magazine/config/init.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,17 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Magazine | <?php echo (isset($header) && !empty($header))?$header:"Dashboard" ?> </title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="nprogress/nprogress.css" rel="stylesheet">
+    <link href="assets/nprogress/nprogress.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="css/custom.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -26,7 +29,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -72,8 +75,8 @@
                         <span>Settings</span>
                       </a>
                     </li>
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="password-change">Change Password</a></li>
+                    <li><a href="logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
