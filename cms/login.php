@@ -1,6 +1,5 @@
-
 <?php 
-    include $_SERVER['DOCUMENT_ROOT'].'magazine/config/init.php';
+    include $_SERVER['DOCUMENT_ROOT'].'config/init.php';
     include 'inc/checklogin.php';
  ?>
 <!DOCTYPE html>

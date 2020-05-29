@@ -1,8 +1,8 @@
 <?php 
 $header = "Home";
 include 'inc/header.php'; ?>
-<?php include 'inc/checklogin.php';?>
-        
+<?php include 'inc/checklogin.php'; ?>
+
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
@@ -50,7 +50,6 @@ include 'inc/header.php'; ?>
                   </div>
                   <div class="x_content">
                       Add content to the page ...
-                      
                   </div>
                 </div>
               </div>

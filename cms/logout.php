@@ -1,5 +1,5 @@
 <?php 
-    include $_SERVER['DOCUMENT_ROOT'].'magazine/config/init.php';
+    include $_SERVER['DOCUMENT_ROOT'].'config/init.php';
    	$user = new user();
     $datas = array(
 		'session_token' => ""
