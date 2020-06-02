@@ -84,7 +84,7 @@ include 'inc/header.php'; ?>
                             if ($categories) {
                               foreach ($categories as $key => $category) {
                           ?>
-                            <option value="<?php echo($category->id) ?>" <?php echo ($blog_info->categoryid==$category->id)?"selected":""; ?>><?php echo $category->categoryname; ?></option>
+                            <option value="<?php echo($category->id) ?>" <?php echo (isset($blog_info->categoryid) && !empty($blog_info->categoryid) && $blog_info->categoryid==$category->id)?"selected":""; ?>><?php echo $category->categoryname; ?></option>
                           <?php
                               }
                             }

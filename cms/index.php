@@ -6,7 +6,6 @@ include 'inc/header.php'; ?>
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
-            <?php flashMessage(); ?>
             <div class="page-title">
               <div class="title_left">
                 <h3>Dashboard</h3>
@@ -30,27 +29,45 @@ include 'inc/header.php'; ?>
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Dashboard</h2>
-                    <!-- <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul> -->
+                    <h2>New Messages</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                      Add content to the page ...
-                  </div>
+                    <table id="datatable" class="table table-striped table-bordered">
+                     <thead>
+                       <th>S.N</th>
+                       <th>ID</th>                        
+                       <th>Email</th>
+                       <th>Subject</th>
+                       <th>Message</th>
+                       <th>Date</th>                       
+                     </thead>
+                     <tbody>
+                       <?php 
+                         $Contact = new contact();
+                         $contacts = $Contact->getAllContactWithLimit(0,3);
+                         // debugger($contacts,true);
+                         if ($contacts) {
+                           foreach ($contacts as $key => $contact) {
+                       ?>
+                       <tr>
+                         <td><?php echo $key+1; ?></td>
+                         <td><?php echo $contact->id; ?></td>
+                         <td><?php echo $contact->email; ?></td>
+                         <td><?php echo $contact->subject; ?></td>
+                         <td><?php echo html_entity_decode($contact->message); ?></td>
+                         <td><?php echo date("M d, Y h:i:s a",strtotime($contact->created_date)); ?></td>                         
+                       </tr>
+                       <?php
+                           }
+                         }
+                       ?>                       
+                     </tbody>
+                    </table>
+                    <a class="btn btn-success text-center" href="contact">Respond to Messages</a>
+                      
+                    </div>
+                    </div>
                 </div>
               </div>
             </div>

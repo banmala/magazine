@@ -8,3 +8,107 @@ May 29, 2020 06:06:56 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 U
 May 29, 2020 06:16:56 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
 May 29, 2020 06:16:56 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'where clause'
 May 29, 2020 06:16:56 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 06:25:23 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 06:25:23 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'where clause'
+May 29, 2020 06:25:23 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:16:30 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:16:48 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:16:48 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'where clause'
+May 29, 2020 07:16:48 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:17:57 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:18:30 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:18:32 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'where clause'
+May 29, 2020 07:18:32 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:18:55 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:19:15 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:19:15 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'where clause'
+May 29, 2020 07:19:15 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'session_token' in 'field list'
+May 29, 2020 07:23:59 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 29, 2020 09:03:34 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 06:45:32 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 06:47:05 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 06:47:51 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 06:47:55 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 08:50:59 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 08:51:42 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 08:53:04 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 08:54:06 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:00:42 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:02:49 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:26:13 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:47:53 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:48:44 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:49:30 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 30, 2020 09:51:56 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'url' in 'field list'
+May 31, 2020 08:57:16 am : (addData) : SQLSTATE[01000]: Warning: 1265 Data truncated for column 'type' at row 1
+May 31, 2020 08:57:30 am : (addData) : SQLSTATE[01000]: Warning: 1265 Data truncated for column 'type' at row 1
+May 31, 2020 09:05:27 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 31, 2020 09:06:05 am : (addData) : SQLSTATE[01000]: Warning: 1265 Data truncated for column 'type' at row 1
+May 31, 2020 08:36:33 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 31, 2020 08:57:09 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 07:37:08 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 09:17:11 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 09:17:11 am : (run Query database) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'datetime default current_timestamp,
+						updated_date datetime on update curren' at line 8
+Jun 02, 2020 09:17:36 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 09:29:43 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:27:40 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:32:35 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:13 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:17 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:19 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:20 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:28 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:32 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:51 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:34:53 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:35:44 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:35:47 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:35:48 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:36:48 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:37:36 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:39:02 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:39:04 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:39:05 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:42:44 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:43:44 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:43:46 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:44:26 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:44:28 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:44:29 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:45:53 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:45:55 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:47:11 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:47:41 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:58:37 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:58:46 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:58:47 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 10:59:38 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:00:27 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:01:11 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:01:33 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:01:55 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:02:05 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:03:09 am : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+Jun 02, 2020 11:25:47 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 11:48:01 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 11:52:44 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 11:52:50 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 11:53:26 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 11:53:29 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 11:53:39 am : (addData) : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id ASC' at line 1
+Jun 02, 2020 12:29:39 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:29:52 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:31:22 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:31:33 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:31:46 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:32:21 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:32:53 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:33:47 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:34:37 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:35:04 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:36:08 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:36:16 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:36:52 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:41:04 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
+Jun 02, 2020 12:43:01 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category' in 'where clause'
