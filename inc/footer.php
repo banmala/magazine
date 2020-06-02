@@ -7,7 +7,7 @@
 					<div class="col-md-5">
 						<div class="footer-widget">
 							<div class="footer-logo">
-								<a href="index.html" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+								<a href="index" class="logo"><img src="./assets/img/logo.png" alt=""></a>
 							</div>
 							<ul class="footer-nav">
 								<li><a href="#">Privacy Policy</a></li>
@@ -63,14 +63,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</form>
 							</div>
 							<ul class="footer-social">
-								<li><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="google.com"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+								<?php 
+									$Followus=new followus();
+									$Followsus=$Followus->getAllFollowus();
+									// debugger($Followsus,true);
+									if($Followsus){
+										foreach ($Followsus as $key => $followus) {
+								?>
+								<li><a href="<?php echo($followus->url); ?>" target="_blank"><i class="fa <?php echo($followus->icon); ?>" ></i></a></li>
+								<?php
+										}
+									}
+								 ?>
 							</ul>
 						</div>
 					</div>
-
 				</div>
 				<!-- /row -->
 			</div>

@@ -112,3 +112,14 @@ Jun 02, 2020 12:36:16 pm : (addData) : SQLSTATE[42S02]: Base table or view not f
 Jun 02, 2020 12:36:52 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
 Jun 02, 2020 12:41:04 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.blogs1' doesn't exist
 Jun 02, 2020 12:43:01 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category' in 'where clause'
+Jun 02, 2020 09:12:19 pm : (DB Connection) : SQLSTATE[HY000] [1049] Unknown database 'khwopa'
+Jun 02, 2020 10:19:07 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:20:05 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:20:34 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:21:11 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:21:29 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:21:29 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'khwopa.followsus' doesn't exist
+Jun 02, 2020 10:26:35 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+Jun 02, 2020 10:27:01 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'added_by' in 'field list'
+Jun 02, 2020 10:27:15 pm : (addData) : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'added_by' in 'field list'
+Jun 02, 2020 10:28:32 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'

@@ -1,5 +1,5 @@
 <?php 
-$header = "Category";
+$header = "FollowUs";
 include 'inc/header.php'; ?>
 <?php include 'inc/checklogin.php'; ?>
 
@@ -9,7 +9,7 @@ include 'inc/header.php'; ?>
             <?php flashMessage(); ?>
             <div class="page-title">
               <div class="title_left">
-                <h3>Category</h3>
+                <h3>FollowUs</h3>
               </div>
 
               <!-- <div class="title_right">
@@ -30,9 +30,9 @@ include 'inc/header.php'; ?>
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>List of Categories</h2>
+                    <h2>List of Follow Us Links</h2>
                     <ul class="nav navbar-right panel_toolbox">
-                      <a href="javascript:;" class="btn btn-primary" onclick="addCategory();">Add Category</a>
+                      <a href="javascript:;" class="btn btn-primary" onclick="addFollowus();">Add FollowUs</a>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
@@ -40,27 +40,28 @@ include 'inc/header.php'; ?>
                     <table id="datatable" class="table table-striped table-bordered">
                       <thead>
                         <th>S.N</th>
-                        <th>Category Name</th>
-                        <th>Description</th>
-                        <th>Action</th>
+                        <th>Followus Name</th>
+                        <th>Icon-Name</th>
+                        <th>URL</th>
                       </thead>
                       <tbody>
                         <?php 
-                          $Category = new category();
-                          $Categories = $Category->getAllCategory();
+                          $Followus = new followus();
+                          $Followsus = $Followus->getAllFollowus();
                           // debugger($Categories);
-                          if ($Categories) {
-                            foreach ($Categories as $key => $category) {
+                          if ($Followsus) {
+                            foreach ($Followsus as $key => $followus) {
                         ?>
                         <tr>
                           <td><?php echo $key+1; ?></td>
-                          <td><?php echo $category->categoryname; ?></td>
-                          <td><?php echo html_entity_decode($category->description); ?></td>
+                          <td><?php echo $followus->followusname; ?></td>
+                          <td><?php echo $followus->icon; ?></td>
+                          <td><?php echo $followus->url; ?></td>                          
                           <td>
-                            <a href="javascript:;" class="btn btn-info" onclick="editCategory(this);" data-category_info='<?php echo(json_encode($category)) ?>'>
+                            <a href="javascript:;" class="btn btn-info" onclick="editFollowus(this);" data-followus_info='<?php echo(json_encode($followus)) ?>'>
                               <i class="fa fa-pencil"></i>
                             </a>
-                            <a href="process/category?id=<?php echo($category->id) ?>&amp;act=<?php echo substr(md5("Delete-Category-".$category->id.$_SESSION['token']), 3,15) ?>" class="btn btn-danger">
+                            <a href="process/followus?id=<?php echo($followus->id) ?>&amp;act=<?php echo substr(md5("Delete-Followus-".$followus->id.$_SESSION['token']), 3,15) ?>" class="btn btn-danger">
                               <i class="fa fa-trash"></i>
                             </a>
                           </td>
@@ -77,19 +78,23 @@ include 'inc/header.php'; ?>
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="title">Add Category</h4>
+                            <h4 class="modal-title" id="title">Add Followus</h4>
                           </div>
-                          <form action="process/category" method="post">
+                          <form action="process/followus" method="post">
                             
                             <div class="modal-body">
                               <div class="form-group">
-                                <label for="">Category Name</label>
-                                <input type="text" class="form-control" placeholder="Category Name" name="categoryname" id="categoryname">
+                                <label for="">Followus Name</label>
+                                <input type="text" class="form-control" placeholder="Followus Name" name="followusname" id="followusname">
                               </div>
                               <div class="form-group">
-                                <label for="">Category Description</label>
-                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                                <label for="">Followus Icon</label>
+                                <input type="text" class="form-control" placeholder="Followus Icon" name="icon" id="icon">
                               </div>
+                              <div class="form-group">
+                                <label for="">Followus URL</label>
+                                <input type="text" class="form-control" placeholder="Followus URL" name="url" id="url">
+                              </div>                              
                             </div>
 
                             <div class="modal-footer">
@@ -116,39 +121,30 @@ include 'inc/header.php'; ?>
   <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
   <script src="assets/js/datatable.js"></script>
   <script type="text/javascript">
-    function addCategory(){
-      $('#title').html('Add Category');
-      $('#categoryname').val("");
+    function addFollowus(){
+      $('#title').html('Add Followus');
+      $('#followusname').val("");
+      $('#icon').val("");
+      $('#url').val("");      
       $('#id').removeAttr('value');
       showModal();
     }
 
-    function editCategory(element){
-      var category_info = $(element).data('category_info');
-      if (typeof(category_info) != 'object') {
-        category_info=JSON.parse(category_info);
+    function editFollowus(element){
+      var followus_info = $(element).data('followus_info');
+      if (typeof(followus_info) != 'object') {
+        followus_info=JSON.parse(followus_info);
       }
-      console.log(category_info);
-      $('#title').html('Edit Category');
-      $('#categoryname').val(category_info.categoryname);
-      $('#id').val(category_info.id);
-      showModal(category_info.description);
+      console.log(followus_info);
+      $('#title').html('Edit Followus');
+      $('#followusname').val(followus_info.followusname);
+      $('#icon').val(followus_info.icon);
+      $('#url').val(followus_info.url);
+      $('#id').val(followus_info.id);
+      showModal();
     }
 
-    function showModal(data=""){
-      ckeditor(data);
+    function showModal(){
       $('.modal').modal();
-    }
-
-    function ckeditor(data=""){
-      $('.ck').remove();
-      ClassicEditor
-      .create( document.querySelector( '#description' ) )
-      .then( editor => {
-          editor.setData(data);
-      } )
-      .catch( error => {
-          console.error( error );
-      } );
     }
   </script>

@@ -1,26 +1,26 @@
 <?php 
-	class category extends database{
+	class followus extends database{
 		function __construct(){
-			$this->table = 'categories';
+			$this->table = 'followsus';
 			database::__construct();
 		}
 
-		public function addCategory($data,$is_die=false){
+		public function addFollowus($data,$is_die=false){
 			return $this->addData($data,$is_die);
 		}
 
-		public function getCategorybyId($category_id,$is_die=false){
+		public function getFollowusbyId($followus_id,$is_die=false){
 			$args = array(
 				'where' => array(
 						'or' => array(
-							'id' => $category_id,
+							'id' => $followus_id,
 						)
 					)
 			);
 			return $this->getData($args,$is_die);
 		}
 
-		public function getAllCategory($is_die=false){
+		public function getAllFollowus($is_die=false){
 			$args = array(
 				'where' => array(
 						'or' => array(
@@ -32,7 +32,7 @@
 			return $this->getData($args,$is_die);
 		}
 		
-		public function updateCategoryById($data,$id,$is_die=false){
+		public function updateFollowusById($data,$id,$is_die=false){
 			$args = array(
 				'where' => array(
 						'or' => array(
@@ -43,7 +43,7 @@
 			return $this->updateData($data,$args,$is_die);
 		}
 
-		public function deleteCategoryById($id,$is_die=false){
+		public function deleteFollowusById($id,$is_die=false){
 			$args = array(
 				'where' => array(
 						'or' => array(

@@ -56,7 +56,7 @@
 					            'view',
 					            'image',
 					        	'created_date'],
-				'where' => " where title LIKE '".$key."%'"
+				'where' => " where title LIKE '%".$key."%'"
 			);
 			return $this->getData($args,$is_die);
 		}
