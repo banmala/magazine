@@ -363,7 +363,7 @@
 						?>
 										
 						<div class="aside-widget text-center">
-							<a href="<?php echo ("advertisement->url"); ?>" style="display: inline-block;margin: auto;">
+							<a href="<?php echo ("$advertisement->url"); ?>" style="display: inline-block;margin: auto;">
 								<img class="img-responsive" src="<?php echo "$thumbnail"; ?>" alt="">
 							</a>
 						</div>
@@ -495,7 +495,7 @@
 						// debugger($advertisements,true);							
 					?>
 					<div class="aside-widget text-center">
-						<a href="<?php echo ("advertisement->url"); ?>" style="display: inline-block;margin: auto;">
+						<a href="<?php echo ("$advertisement->url"); ?>" style="display: inline-block;margin: auto;">
 							<img class="img-responsive" src="<?php echo "$thumbnail"; ?>" alt="">
 						</a>
 					</div>					

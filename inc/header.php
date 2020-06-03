@@ -127,10 +127,18 @@
 					<div class="section-row">
 						<h3>Follow us</h3>
 						<ul class="nav-aside-social">
-							<li><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="google.com"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+							<?php 
+									$Followus=new followus();
+									$Followsus=$Followus->getAllFollowus();
+									// debugger($Followsus,true);
+									if($Followsus){
+										foreach ($Followsus as $key => $followus) {
+								?>
+								<li><a href="<?php echo($followus->url); ?>" target="_blank"><i class="fa <?php echo($followus->icon); ?>" ></i></a></li>
+								<?php
+										}
+									}
+								 ?>							
 						</ul>
 					</div>
 					<!-- /social links -->
